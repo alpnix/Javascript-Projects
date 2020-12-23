@@ -5,13 +5,13 @@
     overflow: auto;
 }
 body{
-    height: 800px;
+    height: 657px;
     background: rgba(30,80,255,0.8);
     background-repeat: no-repeat;
 }
 .calculator{
     width: 50%;
-    transform: translatey(25%);
+    transform: translatey(15%);
     margin: auto;
     border-radius: 20px;    
     box-shadow: 5px 10px 30px #2b2323;
@@ -23,6 +23,7 @@ body{
     text-align: right;
     font-size: 60px;
     padding: 15px 35px;
+    padding-left: 10px;
 }
 button{
     background: white;
@@ -71,6 +72,7 @@ button{
     left: 75%;
     bottom: 0;
     height: 48.35%;  
+    overflow: hidden;
 }
 .col-3 button{
     background: linear-gradient(to top, rgba(200,20,0,0.8),rgba(255,80,30,0.8));
@@ -82,5 +84,49 @@ button{
     text-align: center;
     padding: 0 42%;
     margin: auto;
-    border-top: 2px solid rgba(0, 0, 206, 0.7);
+    border-top: 1px solid rgba(30, 30, 63, 0.7);
+    overflow: hidden;
+}
+@media screen and (max-width:450px){
+    .calculator{
+        width: 90%;
+        margin: auto;
+    }
+    .container{
+        width: 100%;
+    }
+}
+@media screen and (min-height: 800px){
+    body{
+        height: 800px;
+    }
+    .calculator{
+        transform: translatey(30%);
+    }
+}
+@media screen and (min-height: 1000px){
+    body{
+        height: 1000px;
+    }
+    .calculator{
+        transform: translatey(38%);
+    }
+}
+@media screen and (min-width: 1000px){
+    .calculator{
+        width: 500px;
+    }
+}
+@media screen and (min-width: 1400px){
+    .calculator{
+        width: 600px;
+    }
+}
+@media screen and (min-width: 1800px){
+    .calculator{
+        width: 700px;
+    }
+    .display{
+        padding: 20px 40px;
+    }
 }
