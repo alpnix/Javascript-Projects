@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
 *{
     margin: 0;
     padding:0;
@@ -128,5 +129,8 @@ button{
     }
     .display{
         padding: 20px 40px;
+    }
+    .col-3{
+        height: 46.8%;
     }
 }
