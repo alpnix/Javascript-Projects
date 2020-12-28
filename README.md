@@ -1,2 +1,2 @@
-# Javascript-Calculator
-This is a simple calculator I've built using HTML, CSS and JavaScript.
+# Javascript Projects
+There are some simple JavaScript projects I've built using HTML, CSS and JavaScript.
