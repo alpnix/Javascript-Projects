@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Audiowide;
+    box-sizing: border-box;
+    border: none;
+}
+*{
+    color:white;
+}
+html:root{
+    background: yellow;
+}
+.block h1{
+    display: none;
+}
+body{
+    --main-background-color:rgba(0,0,0,0.92); 
+    background-color: var(--main-background-color);
+}
+.tic-tac-toe{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.turn{
+    --my-var: 15px;
+    height: 15%;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board{
+    height: 85%;
+    width: 80%;
+    margin: 0% auto 1%;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    width: 100%;
+    flex: 1;
+    margin: auto;
+}
+.row:nth-child(1) .block{
+    border-top: none;
+}
+.row:nth-child(3) .block{
+    border-bottom: none;
+}
+.row .block:nth-child(1){
+    border-left: none;
+}
+.row .block:nth-child(3){
+    border-right: none;
+}
+.block{
+    border: 2px solid whitesmoke;
+    width: 33.33333%;
+    cursor: pointer;
+    transition: 2s;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: rad;
+}
+.block h1:nth-child(1){
+    color: red;
+    font-size: 4rem;
+    opacity: 30%;
+}
+.block h1:nth-child(2){
+    color: yellow;
+    font-size: 4rem;
+    opacity: 30%;
+}
+/*.block:hover h1:nth-child(1){
+    display: block;
+}*/
+@media screen and (min-width:1400px){
+    .board{
+        margin: 2% auto 3%;
+    }    
+}
