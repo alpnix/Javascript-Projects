@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: black;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-gap: 0.2em;
+    width: 50%;
+    height: 70%;
+    margin: auto;
+    background: black;
+}
+.grid > .box{
+    border-radius: 15px;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 4px #2f2f2f;
+    transition: 1.6s;
+}
+.grid > .box:hover{
+    transition: all 0.1s;
+}
+@media screen and (max-width:700px){
+    .grid{
+        grid-template-columns: repeat(5,1fr);
+    }
+    .grid > .box{
+        border-radius: 15px;
+        background-color: #1f1f1f;
+    }
+    .grid > .box:nth-child(odd){
+        display: none;
+    }
+}
